@@ -1,6 +1,6 @@
 <h1>Paintings For Sale</h1>
 <ul>
     <% @products.each do |p| %>
-    <li><%= link_to p.name, products_path(p) %></li>
+    <li><%= link_to p.name, product_path(p) %></li>
     <% end %>
 </ul>
