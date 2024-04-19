@@ -1,3 +1,6 @@
-<h2><%= @product.name %></h2>
-<p><%= @product.price %></p>
-<p><%= @product.description %></p>
+<section id="painting">
+    <h3><%= @product.name %></h3>
+    <p>$<%= '%.2f' % @product.price %></p>
+    <p><%= @product.description %></p>
+    <%= link_to "Back to paintings", products_path %>
+</section>
